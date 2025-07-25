@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Dialog,
   DialogContent,
@@ -22,9 +22,14 @@ export function QuizLinkModal({ quizId }: QuizLinkModalProps) {
   const { isOpen, toggleModal } = useModalStore();
   
   const [copied, setCopied] = useState(false);
+  const [quizUrl, setQuizUrl] = useState("");
   const router = useRouter();
 
-  const quizUrl = `${window.location.origin}/quiz/${quizId}`;
+  useEffect(() => {
+    if (quizId && typeof window !== "undefined") {
+      setQuizUrl(`${window.location.origin}/quiz/${quizId}`);
+    }
+  }, [quizId])
 
   const copyToClipboard = async () => {
     try {
