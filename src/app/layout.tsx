@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   title: "QUIZ SMITH",
   description: "AI-Powered Quiz Generator",
   icons: {
-    icon: "prof-q-logo.ico",
-    shortcut: "prof-q-logo.ico",
-    apple: "prof-q-logo.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
