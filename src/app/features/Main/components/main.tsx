@@ -27,7 +27,7 @@ const MainSectionComponent = () => {
 
   const handleGenerate = () => {
     toggleLoading();
-    alert(`Generating quiz with input: ${textInput}`);
+    // alert(`Generating quiz with input: ${textInput}`);
     clearInputs();
 
     setLinkId("12345");
