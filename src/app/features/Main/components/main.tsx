@@ -53,7 +53,7 @@ const MainSectionComponent = () => {
         </div>
       </div>
       <div className="w-full flex items-center justify-center">
-        <Card className="xl:w-8/12 bg-white/95 backdrop-blur-xl border-0 shadow-2xl shadow-violet-500/30 rounded-md overflow-hidden">
+        <Card className="w-full bg-white/95 backdrop-blur-xl border-0 shadow-2xl shadow-violet-500/30 rounded-md overflow-hidden">
           <CardHeader>
             <CardTitle>Create Your Quiz</CardTitle>
             <CardDescription>
